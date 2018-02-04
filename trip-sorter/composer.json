@@ -1,0 +1,17 @@
+{
+    "name": "trip-sorter",
+    "description": "Trip sorter script",
+    "require": {
+        "php": "^5.5"
+    },
+    "authors": [
+        {
+            "name": "Islam Khalil"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Transportations\\": "Transportations/"
+        }
+    }
+}
