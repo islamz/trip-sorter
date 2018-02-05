@@ -12,6 +12,6 @@ class Train extends AbstractTransportations{
 	}
 
 	public function getMessage(){
-		return 'Take train '.$this->trip.' From '.$this->from.' To '.$this->to.'. '.'Sit in seat '.$this->seat.''. PHP_EOL;
+		return 'Take train '.$this->trip.' From '.$this->from.' To '.$this->to.'. '.'Sit in seat '.$this->seat."<br />";
 	}
 }
