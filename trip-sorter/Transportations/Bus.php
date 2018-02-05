@@ -10,6 +10,6 @@ class Bus extends AbstractTransportations{
 	}
 
 	public function getMessage(){
-		return 'Take the airport bus from '.$this->from.' to '.$this->to.'. No seat assignment.'. PHP_EOL;
+		return 'Take the airport bus from '.$this->from.' to '.$this->to.'. No seat assignment.'."<br />";
 	}
 }
