@@ -23,7 +23,7 @@ class cardsSorter{
     }
 
 	//get Transpotaion msg
-    private function getFirstTrip()
+    public function getFirstTrip()
     {
     	
     	foreach ($this->boardings as $key => $boarding) {
@@ -38,12 +38,12 @@ class cardsSorter{
 
     			$this->destenation = $boarding['to'];
 
-    			return $this->sortBoardings();
+    			$this->sortBoardings();
     		}
     	}
     }
 
-    private function sortBoardings(){
+    public function sortBoardings(){
     	foreach ($this->boardings as $key => $boarding) {
     		if($this->destenation == $boarding['from']){
 
@@ -67,7 +67,7 @@ class cardsSorter{
 
 		$this->sortedTrip .= $msg;
 
-    	echo "<pre>";print_r($this->sortedTrip);die;
+    	echo $this->sortedTrip;
     }
 
     
